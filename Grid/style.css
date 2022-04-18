@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: gray;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background: #fafafa;
+
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+        "nav-left nav-right"
+        "footer footer"
+    ;
+
+    justify-content: center;
+    align-content: center;
+}
+
+/*NAV-LEFT*/
+
+.nav-left {
+    grid-area: nav-left;
+
+    min-width: 420px;
+    min-height: 615px;
+}
+
+.nav-left .mobile {
+    background-image: url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
+    min-width: 454px;
+    min-height: 618px;
+}
+
+.nav-left img {
+    position: relative;
+    top: 25px;
+    left: 158px;
+    width: 250px;
+}
+
+/*NAV-RIGHT*/
+
+.nav-right {
+    grid-area: nav-right;
+
+    min-width: 420px;
+    min-height: 615px;
+}
+
+.box {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 25px;
+    max-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.logo-instagram {
+    width: 175px;
+}
+
+.nav-right input {
+    padding: 5px 15px;
+    font-size: 12px;
+    min-width: 205px;
+    margin-bottom: 5px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    color: #8e8e8e;
+    border-radius: 5px;
+}
+
+.nav-right button {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 240px;
+
+    border: 0;
+    color: #fff;
+    background: #A9dfff;
+}
+
+.nav-right p {
+    color: #8e8e8e;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.nav-right p::before {
+    content: "_____________________";
+    padding: 10px;
+    position: relative;
+    top: -5px;
+}
+
+.nav-right p::after {
+    content: "_____________________";
+    padding: 10px;
+    position: relative;
+    top: -5px;
+}
+
+.nav-right .entrar-face {
+    color: #374c89;
+    font-weight: 700;
+}
+
+.nav-right .color-blue {
+    color: #374c89;
+    font-size: 12px;
+}
+
+.box-footer {
+    padding: 25px;
+    max-width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box-footer img {
+    max-width: 115px;
+    padding: 10px 0px;
+}
+
+.link-blue {
+    color: #008eff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+    grid-area: footer;
+
+    justify-self: center;
+    text-align: center;
+    max-width: 780px;
+
+    z-index: 1;
+    font-size: 13px;
+    color: #8e8e8e;
+}
+
+.footer .links {
+    list-style: none;
+    color: #8e8e8e;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.footer li a {
+    color: #8e8e8e;
+    text-decoration: none;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-left {
+        display: none;
+    }
+
+    .nav-right {
+        margin: 0;
+        width: 90%;
+    }
+}
